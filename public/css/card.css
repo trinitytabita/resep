@@ -1,0 +1,103 @@
+
+    /* Wrapper utama */
+.section_our_solution .row {
+    align-items: center;
+}
+
+.solution_card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);;
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px;
+    z-index: 1;
+    overflow: hidden;
+    width: 250px;
+    min-height: 300px;
+    transition: transform 1.7s, box-shadow 0.7s, background 2s;
+}
+
+.solution_card:hover {
+    background: #495057;
+    color: #f8f9fa;
+    transform: scale(1.05);
+    z-index: 9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solution_card .so_top_icon {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution_card .so_top_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.solution_card .solu_title h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color:#212529 ;
+    text-align: center;
+    transition: color 0.5s;
+}
+.solution_card:hover h3  {
+    color: #f8f9fa; /* Judul menjadi putih */
+}
+
+.solution_card .solu_description p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #212529;
+    transition: color 0.5s;
+}
+
+.solution_card:hover p {
+    color: #ced4da; /* Deskripsi menjadi abu terang */
+}
+
+.solution_card .solu_description a {
+    display: block;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.solution_card .solu_description a:hover {
+    background-color: #ffc107; /* Kuning emas untuk hover */
+    color: #495057; /* Abu gelap saat hover */
+}
+
+/* Hover Color Bubble */
+.hover_color_bubble {
+    position: absolute;
+    background: rgba(17, 58, 238, 0.15);
+    width: 100rem;
+    height: 100rem;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    left: -18rem;
+    transition: top 1s;
+}
+
+.solution_card:hover .hover_color_bubble {
+    top: 0;
+}
+
+
+
